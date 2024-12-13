@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamBurger - Бургеры с душой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="./img/logo.webp" alt="JamalBurg   Logo">
+            <h1>JamBurger</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="glav" href="#home">Главная</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a class="zakaz" href="#order">Заказать</a></li>
+            </ul>
+        </nav>
+       <script></script>
+    </header>
+    
+
+    <!-- Main Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h2 class="animated fadeIn">Добро пожаловать в JamBurger!</h2>
+            <p class="animated fadeIn">Мы готовим лучшие бургеры, которые покоряют с первого укуса.</p>
+            <button class="order-now"><a href="#order">Заказать сейчас</a></button>
+
+        </div>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2 class="animated fadeIn">Наше Меню</h2>
+        <div class="menu-items">
+            <div class="item animated fadeIn">
+                <img src="./img/б.jpg" alt="Чизбургер">
+                <h3>Чизбургер</h3>
+                <p>Сочная говядина с расплавленным сыром, свежими овощами и специальным соусом.</p>
+                <p><strong>Цена: 13 azn.</strong></p>
+                <button class="order-btn" onclick="openOrderModal('Чизбургер', '13 azn')">Заказать</button>
+            </div>
+            <div class="item animated fadeIn">
+                <img src="./img/n.webp" alt="Бургер с беконом">
+                <h3>Бургер с беконом</h3>
+                <p>Идеально приготовленный бекон, плавленый сыр и свежие овощи.</p>
+                <p><strong>Цена: 17 azn.</strong></p>
+                <button class="order-btn" onclick="openOrderModal('Бургер с беконом', '17 azn')">Заказать</button>
+            </div>
+            <div class="item animated fadeIn">
+                <img src="./img/o.jpg" alt="Вегетарианский бургер">
+                <h3>Вегетарианский бургер</h3>
+                <p>Нежный растительный котлет и свежие овощи.</p>
+                <p><strong>Цена: 8 azn.</strong></p>
+                <button class="order-btn" onclick="openOrderModal('Вегетарианский бургер', '8 azn')">Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderModal()">&times;</span>
+            <h2>Оформление заказа</h2>
+            <p id="selectedItem"></p>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" placeholder="Ваше имя" name="name" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" placeholder="Ваш телефон" name="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Ваш email" name="email" required>
+                
+                <label for="card">Номер карты:</label>
+                <input type="text" id="card" placeholder="Введите номер карты" name="card" maxlength="16" required>
+                
+                <label for="expiry">Срок действия карты:</label>
+                <input type="text" id="expiry" placeholder="MM/YY" name="expiry" maxlength="5" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" placeholder="Три цифры сзади карты" name="cvv" maxlength="3" required>
+                
+                <button type="submit" class="submit-button">Подтвердить заказ</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="animated fadeIn">О нас</h2>
+        <p class="animated fadeIn">JamBurger — это место, где сочетаются вкусные бургерные рецепты и качественные ингредиенты. Мы стремимся создавать уникальные вкусы и радовать наших гостей.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="animated fadeIn">Контакты</h2>
+        <p class="animated fadeIn">Адрес: ул.Шарифзаде, д.1, офис 1</p>
+        <p class="animated fadeIn">Телефон: +994 051-543-23-06</p>
+        <p class="animated fadeIn">Электронная почта: info@JamBurger.com</p>
+    </section>
+
+    
+    
+    <section id="order" class="order">
+        <!-- Содержание формы заказа -->
+        <h2>Заполните форму для заказа</h2>
+        <form>
+            <div class="input-field-container">
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Ваше имя" name="name" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Ваш email" name="email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" placeholder="Ваш телефон" name="phone" required>
+                </div>
+            </div>
+            <div class="submit-button-container">
+                <button type="submit" class="submit-button">Отправить заказ</button>
+            </div>
+        </form>
+        
+    </section>
+
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2024 JamBurger. Все права защищены.</p>
+    </footer>
+
+   
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>

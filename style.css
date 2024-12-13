@@ -1,0 +1,2346 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px white;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Home Section */
+.home {
+    text-align: center;
+    background-image: url('home-bg.jpg');
+    background-size: cover;
+    padding: 150px 20px;
+    color: white;
+    position: relative;
+    background-position: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.home-content {
+    animation: fadeInUp 2s ease-out;
+}
+
+button a {
+    text-decoration: none;
+    background-color: #ff5722;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+button a:hover {
+    background-color: #e64a19;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menu Section */
+.menu {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.menu .menu-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.menu .item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.menu .item:hover {
+    transform: translateY(-10px);
+}
+
+.menu .item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu .item h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.menu .item p {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.menu .item strong {
+    font-size: 18px;
+    color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f9f9f9;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Order Section */
+.order {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f9f9f9;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.order h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.order form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order input, .order textarea {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.order input:focus, .order textarea:focus {
+    border-color: #ff5722;
+}
+
+.order button {
+    background-color: #ff5722;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.order button:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Home Section */
+.home {
+    text-align: center;
+    background-image: url('bg-home.jpg'); /* Можно заменить на любое изображение */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.home:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: -1;
+}
+
+.home-content {
+    animation: fadeInUp 2s ease-out;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 2s ease-out;
+}
+
+.home p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    animation: fadeIn 2.5s ease-out;
+}
+
+.home button a {
+    text-decoration: none;
+    background-color: #ff5722;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease-in-out;
+    text-transform: uppercase;
+    display: inline-block;
+    animation: fadeIn 3s ease-out;
+}
+
+.home button a:hover {
+    background-color: #e64a19;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: background 0.3s ease-in-out;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header .logo img {
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo:hover img {
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ff5722; /* яркий акцентный цвет */
+}
+
+/* Плавное изменение фона при прокрутке */
+header.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Анимации */
+@keyframes logoScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Дополнительные стили для анимации логотипа */
+header .logo img {
+    animation: logoScale 0.5s ease-in-out;
+}
+
+/* Responsive - Mobile */
+
+.order-now {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff5722, #e64a19);
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-now a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Плавный переход и анимации */
+.order-now:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #e64a19, #ff5722);
+}
+
+.order-now:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    
+.order-now:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.order-now:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Анимация при загрузке страницы */
+.order-now {
+    animation: buttonFadeIn 1.5s ease-in-out;
+}
+
+@keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.menu h2, .about h2, .contact h2, .order h2 {
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.home h2 {
+    animation: slideInRight 1.5s ease-out;
+}
+
+.menu .item {
+    animation: fadeIn 2s ease-in-out;
+}
+.home {
+    position: relative;
+    background-image: url('bg-home.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    color: white;
+    overflow: hidden;
+    z-index: 0;
+    animation: fadeIn 2s ease-out;
+}
+
+.home:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: -1;
+}
+
+.home-content {
+    animation: fadeInUp 2s ease-out;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Общие стили страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Мягкий светлый фон */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для блока с картой */
+#location {
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Красивый градиентный фон */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Стили заголовка */
+h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Стили для параграфа */
+p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Стили для карты */
+#map {
+    height: 500px; /* Увеличим высоту карты */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Добавление тени вокруг карты */
+    transition: all 0.3s ease; /* Плавное увеличение карты */
+}
+
+/* Эффект увеличения карты при наведении */
+#map:hover {
+    transform: scale(1.03); /* Увеличение масштаба карты */
+}
+
+/* Стилизация карты с темными оттенками для лучшего контраста */
+.map-style {
+    filter: grayscale(100%) contrast(120%) brightness(80%); /* Чёрно-белый фильтр с повышенной контрастностью */
+}
+header .logo img {
+    width: 150px; /* Увеличиваем ширину логотипа */
+    margin-right: 15px; /* Увеличиваем отступ между логотипом и текстом */
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo {
+    font-size: 28px; /* Увеличиваем размер текста */
+}
+header {
+    position: fixed; /* Фиксируем хедер */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17  0px; /* Высота хедера */
+    background-color: #333; /* Цвет фона хедера */
+    color: #fff; /* Цвет текста в хедере */
+    z-index: 1000; /* Убедитесь, что хедер отображается поверх остального */
+}
+
+body {
+    margin: 0; /* Убираем стандартные отступы */
+    padding-top: 60px; /* Отступ для контента под хедером */
+}
+
+main {
+    padding: 20px; /* Для лучшего отображения текста */
+}
+.animated fadeIn p{
+    color: black;
+}
+.home {
+    padding-top: 250px; /* Или больше, в зависимости от высоты хедера */
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222; /* Темный фон */
+    color: white; /* Белый текст */
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Добавление тени для улучшения контраста */
+}
+.home-content {
+    position: relative;
+    z-index: 10;
+}
+.home h2, .home p {
+    margin-bottom: 20px;
+    font-size: 30px; /* или другой размер */    
+}
+.main-text {
+    color: white; /* Белый цвет текста для контраста */
+}
+.main-text {
+    position: relative;
+    z-index: 10; /* Убедитесь, что текст находится поверх других элементов */
+}
+.main-text {
+    word-wrap: break-word; /* Окружение текста в нужном месте */
+    overflow: visible; /* Убедитесь, что текст не скрывается */
+}   
+.main-text {
+    display: block; /* Убедитесь, что элемент отображается */
+    visibility: visible; /* Убедитесь, что элемент видим */
+}
+ .order p{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    animation: bounceIn 1.5s ease-in-out;
+ }
+ /* Кнопка Заказать сейчас */
+.order-now {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff5722, #e64a19); /* Градиентный фон */
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px; /* Округлая форма */
+    letter-spacing: 2px;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Тень */
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-now a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Эффект при наведении */
+.order-now:hover {
+    transform: scale(1.1); /* Увеличение */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Увеличение тени */
+    background: linear-gradient(45deg, #e64a19, #ff5722); /* Перевернутый градиент */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Эффект при клике */
+.order-now:active {
+    transform: scale(0.98); /* Уменьшение */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект блика */
+.order-now:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.order-now:hover:before {
+    transform: translate(-50%, -50%) scale(1); /* Эффект приближения блика */
+}
+
+/* Анимация при загрузке страницы */
+.order-now {
+    animation: buttonFadeIn 1.5s ease-in-out;
+}
+
+@keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Стиль кнопки */
+.order-now {
+    display: inline-block;
+    background: #FF4081; /* Яркий розовый цвет */
+    color: white;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px; /* Круглая форма */
+    letter-spacing: 2px;
+    border: 2px solid #FF4081; /* Граница, подходящая к цвету фона */
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Цвет текста и ссылки внутри кнопки */
+.order-now a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Эффект при наведении: увеличение, плавное изменение фона */
+.order-now:hover {
+    transform: scale(1.1); /* Увеличение */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Увеличение тени */
+    background: #FF80AB; /* Легкий переход фона */
+    border-color: #FF80AB; /* Соответствие цвета фона */
+}
+
+/* Эффект при нажатии: "утопление" кнопки */
+.order-now:active {
+    transform: scale(0.98); /* Уменьшение */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Меньшая тень */
+}
+
+/* Анимация блика, эффект освещенности */
+.order-now:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3); /* Блик */
+    border-radius: 50%;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.order-now:hover:before {
+    transform: translate(-50%, -50%) scale(1); /* Расширение блика при наведении */
+}
+
+/* Эффект волны при наведении */
+.order-now:active:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: rippleEffect 0.6s linear;
+    z-index: 1;
+}
+
+/* Анимация волны */
+@keyframes rippleEffect {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Плавная анимация появления */
+.order-now {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Стиль кнопки */
+.order-now {
+    display: inline-block;
+    background: #FF4081; /* Яркий розовый цвет */
+    color: white;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px; /* Круглая форма */
+    letter-spacing: 2px;
+    border: 2px solid #FF4081; /* Граница, подходящая к цвету фона */
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Цвет текста и ссылки внутри кнопки */
+.order-now a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Эффект при наведении: увеличение, плавное изменение фона */
+.order-now:hover {
+    transform: scale(1.1); /* Увеличение */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Увеличение тени */
+    background: #FF80AB; /* Легкий переход фона */
+    border-color: #FF80AB; /* Соответствие цвета фона */
+    animation: pulse 1.5s infinite; /* Пульсация */
+}
+
+/* Эффект при нажатии: "утопление" кнопки */
+.order-now:active {
+    transform: scale(0.98); /* Уменьшение */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Меньшая тень */
+}
+
+/* Анимация блика, эффект освещенности */
+.order-now:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3); /* Блик */
+    border-radius: 50%;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.order-now:hover:before {
+    transform: translate(-50%, -50%) scale(1); /* Расширение блика при наведении */
+}
+
+/* Эффект волны при наведении */
+.order-now:active:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: rippleEffect 0.6s linear;
+    z-index: 1;
+}
+
+/* Анимация волны */
+@keyframes rippleEffect {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Плавная анимация появления */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Пульсация кнопки */
+@keyframes pulse {
+    0% {
+        transform: scale(1.1); /* Увеличение */
+    }
+    50% {
+        transform: scale(1); /* Возврат к нормальному размеру */
+    }
+    100% {
+        transform: scale(1.1); /* Увеличение */
+    }
+}
+
+/* Эффект появления текста */
+.order-now:hover a {
+    animation: fadeInText 0.5s ease-out forwards;
+}
+
+/* Появление текста */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Цветовая трансформация при наведении */
+.order-now:hover {
+    background: #FF61A6; /* Новый оттенок фона при наведении */
+    border-color: #FF61A6;
+}
+/* Контейнер заказа внизу страницы */
+.order-footer {
+    background: #fff; /* Белый фон */
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    border-radius: 10px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-out;
+}
+
+/* Фоновый градиент */
+.order-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #FF4081, #FF80AB); /* Градиент */
+    opacity: 0.1;
+    z-index: -1;
+    transform: scale(1.3);
+    transition: transform 0.5s ease-out;
+}
+
+/* Заголовок */
+.order-footer h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Описание */
+.order-footer p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Поля ввода */
+.order-footer input,
+.order-footer select {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 2px solid #FF4081;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Эффект на полях при фокусе */
+.order-footer input:focus,
+.order-footer select:focus {
+    border-color: #FF80AB;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 64, 129, 0.5);
+}
+
+/* Кнопка заказа */
+.order-footer .order-now {
+    display: inline-block;
+    background: #FF4081;
+    color: white;
+    padding: 18px 36px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 2px solid #FF4081;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.order-footer .order-now:hover {
+    background: #FF80AB;
+    border-color: #FF80AB;
+    transform: scale(1.1);
+}
+
+.order-footer .order-now:active {
+    transform: scale(0.98);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация для плавного появления */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Контейнер для заказа */
+.order-footer {
+    background: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.5s ease-out;
+    z-index: 10;
+}
+
+/* Декоративный фон с параллакс-эффектом */
+.order-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #ff4081, #ff80ab);
+    opacity: 0.2;
+    z-index: -1;
+    transition: opacity 0.5s ease-out;
+    transform: scale(1.2);
+}
+
+/* Добавляем параллакс-эффект при прокрутке */
+.order-footer.in-view::before {
+    opacity: 0.4;
+    transform: scale(1.1);
+}
+
+/* Заголовок */
+.order-footer h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Описание */
+.order-footer p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeInUp 1.3s ease-out;
+}
+
+/* Поля ввода */
+.order-footer input,
+.order-footer select {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 2px solid #ff4081;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Эффект на полях при фокусе */
+.order-footer input:focus,
+.order-footer select:focus {
+    border-color: #ff80ab;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 64, 129, 0.5);
+    transform: scale(1.05);
+}
+
+/* Кнопка заказа */
+.order-footer .order-now {
+    display: inline-block;
+    background: #ff4081;
+    color: white;
+    padding: 18px 36px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 2px solid #ff4081;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease-out;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Эффект при наведении на кнопку */
+.order-footer .order-now:hover {
+    background: #ff80ab;
+    border-color: #ff80ab;
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект нажатия */
+.order-footer .order-now:active {
+    transform: scale(0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация для плавного появления */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стилизация при появлении блока на экране (при прокрутке) */
+@keyframes fadeInUpOnScroll {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Применение эффекта для анимации блоков */
+.order-footer .order-now,
+.order-footer h2,
+.order-footer p {
+    animation: fadeInUpOnScroll 1.5s ease-out;
+}
+
+/* Псевдоклассы для улучшения взаимодействия */
+.order-footer input:focus,
+.order-footer select:focus,
+.order-footer .order-now:focus {
+    outline: none;
+    border-color: #ff80ab;
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.6);
+}
+/* Общий контейнер для заказа */
+.order-footer {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.5s ease-out;
+    z-index: 10;
+}
+
+/* Анимация появления при прокрутке */
+.order-footer .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+.order-footer .fade-up.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.order-footer .fade-up.delay-2 {
+    animation-delay: 1s;
+}
+
+
+.order-footer h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Описание */
+.order-footer p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeInUp 1.3s ease-out;
+}
+
+
+.order-footer input,
+.order-footer select {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 2px solid #ff4081;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+.order-footer input:focus,
+.order-footer select:focus {
+    border-color: #ff80ab;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 64, 129, 0.5);
+    transform: scale(1.05);
+}
+
+/* Кнопка заказа */
+.order-footer .order-now {
+    display: inline-block;
+    background: #ff4081;
+    color: white;
+    padding: 18px 36px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 2px solid #ff4081;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease-out;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Эффект при наведении на кнопку */
+.order-footer .order-now:hover {
+    background: #ff80ab;
+    border-color: #ff80ab;
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект нажатия */
+.order-footer .order-now:active {
+    transform: scale(0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация для плавного появления */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Параллакс-эффект на фоне */
+.order-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #ff4081, #ff80ab);
+    opacity: 0.2;
+    z-index: -1;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-out;
+}
+
+.order-footer:hover::before {
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+/* Контейнер для формы */
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Заголовок формы */
+.form-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Общий стиль для полей ввода */
+.input-field {
+    width: 100%;
+    padding: 18px 20px;
+    margin: 10px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Иконки внутри полей */
+.input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 18px;
+}
+
+/* Стиль полей при фокусе */
+.input-field:focus {
+    outline: none;
+    border-color: #ff4081;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(255, 64, 129, 0.4);
+}
+
+/* Эффект для текста на фокусе */
+.input-field:focus::placeholder {
+    color: #ff4081;
+    opacity: 0.8;
+}
+
+/* Место для ошибок валидации */
+.input-error {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Кнопка отправки формы */
+.submit-button {
+    display: inline-block;
+    background-color: #ff4081;
+    color: #fff;
+    padding: 18px 36px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Эффект при наведении на кнопку */
+.submit-button:hover {
+    background-color: #ff80ab;
+    transform: scale(1.05);
+}
+
+/* Анимация для плавного появления */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Контейнер для формы */
+.form-container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Заголовок формы */
+.form-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Общий стиль для полей ввода */
+.input-field-container {
+    margin-bottom: 20px;
+}
+
+/* Поля ввода с округленными углами */
+.input-field {
+    width: 100%;
+    padding: 20px 25px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Иконки внутри полей */
+.input-field i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+}
+
+/* Эффект фокуса на поле ввода */
+.input-field:focus {
+    outline: none;
+    border-color: #ff4081;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.3);
+}
+
+/* Placeholder текст на фокусе */
+.input-field:focus::placeholder {
+    color: #ff4081;
+    opacity: 0.7;
+}
+
+/* Подсказка ошибки */
+.input-error {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Кнопка отправки формы */
+.submit-button {
+    display: inline-block;
+    background: linear-gradient(145deg, #ff4081, #ff80ab);
+    color: white;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Эффект при наведении на кнопку */
+.submit-button:hover {
+    background: linear-gradient(145deg, #ff80ab, #ff4081);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+}
+
+/* Эффект активной кнопки */
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+/* Плавная анимация появления */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Контейнер для формы */
+.form-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Заголовок формы */
+.form-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Общий стиль для полей ввода */
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* Поля ввода с округленными углами */
+.input-field {
+    width: 100%;
+    padding: 20px 25px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    background-color: #f7f7f7;
+    font-size: 18px;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Иконки внутри полей */
+.input-field i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18   px;
+}
+
+/* Эффект фокуса на поле ввода */
+.input-field:focus {
+    outline: none;
+    border-color: #ff4081;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.3);
+}
+
+/* Placeholder текст на фокусе */
+.input-field:focus::placeholder {
+    color: #ff4081;
+    opacity: 0.7;
+}
+
+/* Подсказка ошибки */
+.input-error {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Кнопка отправки формы */
+.submit-button {
+    display: inline-block;
+    background: linear-gradient(145deg, #ff4081, #ff80ab);
+    color: white;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Эффект при наведении на кнопку */
+.submit-button:hover {
+    background: linear-gradient(145deg, #ff80ab, #ff4081);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+}
+
+/* Эффект активной кнопки */
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+/* Плавная анимация появления */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Контейнер формы */
+.form-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Заголовок формы */
+.form-container h2 {
+    font-size: 36px;
+    font-weight: 700;   
+    color: #333;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Общий стиль для контейнера полей ввода */
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* Поля ввода с большим размером */
+.input-field {
+    width: 100%;
+    padding: 18px 25px; /* Увеличенные отступы внутри поля */
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    font-size: 18px;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s ease;
+    min-height: 50px; /* Увеличена высота поля */
+}
+
+/* Иконки внутри полей */
+.input-field i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+}
+
+/* Эффект фокуса на поле ввода */
+.input-field:focus {
+    outline: none;
+    border-color: #ff4081;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.3);
+}
+
+/* Placeholder текст на фокусе */
+.input-field:focus::placeholder {
+    color: #ff4081;
+    opacity: 0.7;
+}
+
+/* Подсказка ошибки */
+.input-error {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Кнопка отправки формы */
+.submit-button {
+    display: inline-block;
+    background: linear-gradient(145deg, #ff4081, #ff80ab);
+    color: white;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Эффект при наведении на кнопку */
+.submit-button:hover {
+    background: linear-gradient(145deg, #ff80ab, #ff4081);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+}
+
+/* Эффект активной кнопки */
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+/* Плавная анимация появления */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Контейнер формы */
+.form-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Заголовок формы */
+.form-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Общий стиль для контейнера полей ввода */
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* Поля ввода с большим размером */
+.input-field {
+    width: 100%;
+    padding: 18px 25px; /* Увеличенные отступы внутри поля */
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    font-size: 18px;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s ease;
+    min-height: 50px; /* Увеличена высота поля */
+}
+
+/* Иконки внутри полей */
+.input-field i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+}
+
+/* Эффект фокуса на поле ввода */
+.input-field input:focus {
+    outline: none;
+    border-color: #ff4081;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.3);
+}
+
+/* Placeholder текст на фокусе */
+.input-field input:focus::placeholder {
+    color: #ff4081;
+    opacity: 0.7;
+}
+
+/* Подсказка ошибки */
+.input-error {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Кнопка отправки формы */
+.submit-button {
+    display: inline-block;
+    background: linear-gradient(145deg, #ff4081, #ff80ab);
+    color: white;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background: linear-gradient(145deg, #ff80ab, #ff4081);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+}
+
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.input-field input{
+    height: 50px;
+    width: 100%;
+}
+.home{
+    background-image: url(./img/щщщщщ.webp);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin: 0;
+box-shadow: none;
+height: 100vh;
+background-color: white;
+}
+header nav ul li a.active {
+    color: #ff5722; /* Оранжевый цвет для активной ссылки */
+    font-weight: bold; /* Дополнительно можно выделить жирным */
+}
+
+header nav ul li a {
+    color: white; /* Цвет ссылок по умолчанию */
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+.menu-items p{
+
+    font-weight: bolder;
+}
+.menu-items{
+    box-shadow: 0px 0px 10px orange;
+
+}
+/* Стили для кнопки заказа */
+.order-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.order-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-content form input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content form .submit-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal-content form .submit-button:hover {
+    background-color: #e64a19;
+}
+.menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.order-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content input, .modal-content button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Базовый стиль кнопки */
+.order-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация при наведении */
+.order-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Анимация при нажатии */
+.order-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+   z-index: 1000;
+    height: 170px;
+    width: 100%;
+  } 
+  header h1{
+    font-size: 25px;
+    text-shadow: 0px 0px 10px ;
+  } 
+  header img{
+    height: 100px;
+    width: 20px;
+  }
+   header nav ul li a{
+    font-size: 13px;
+    font-weight: bolder;
+    margin: 0;
+    
+    left: -50px;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    position: absolute;
+    bottom: -2px;
+    justify-content:space-between ;
+    align-items:center;
+  }
+  .home h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 10px ;
+  }
+  .home p{
+    font-size: 25px;
+    text-shadow: 0px 0px 10px red;
+  }
+  .home button{
+   padding: 10px 15px;
+  }
+  .home{
+    height: 80vh;
+  }
+  .menu h2{
+    font-size: 25px;
+  }
+  .menu-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+  .menu .item{
+    width: 80vw;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .glav{
+    transform: translateX(-20px);
+  }
+  .zakaz{
+    transform: translateX(30px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
