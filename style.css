@@ -1517,7 +1517,7 @@ footer {
 
 /* Кнопка отправки формы */
 .submit-button {
-    display: inline-block;
+    display: flex;
     background-color: #ff4081;
     color: #fff;
     padding: 18px 36px;
@@ -1530,6 +1530,8 @@ footer {
     margin-top: 20px;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    bottom: 30px;
 }
 
 /* Эффект при наведении на кнопку */
@@ -2089,7 +2091,7 @@ header nav ul li a {
 
 .modal-content {
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     width: 90%;
     max-width: 400px;
@@ -2099,8 +2101,8 @@ header nav ul li a {
 
 .modal-content .close {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 15px;
+    right: 20px;
     font-size: 20px;
     cursor: pointer;
     color: #333;
@@ -2302,6 +2304,16 @@ header nav ul li a {
   }
   .zakaz{
     transform: translateX(30px);
+  }
+  .modal-content .close{
+
+    position: absolute;
+    top: 30px;
+        
+  }
+  .submit-button{
+    position: relative;
+    bottom: 30px;
   }
 }
 
