@@ -2101,7 +2101,7 @@ header nav ul li a {
 
 .modal-content .close {
     position: absolute;
-    top: 100px;
+    top: 30px;
     right: 20px;
     font-size: 20px;
     cursor: pointer;
