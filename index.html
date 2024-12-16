@@ -29,7 +29,7 @@
     <!-- Main Section -->
     <section id="home" class="home">
         <div class="home-content">
-            <h2 class="animated fadeIn">Добро пожаловать в JamBurger!</h2>
+            <h2 class="animated fadeIn">Добро пожаловать в <span>JamBurger!</span></h2>
             <p class="animated fadeIn">Мы готовим лучшие бургеры, которые покоряют с первого укуса.</p>
             <button class="order-now"><a href="#order">Заказать сейчас</a></button>
 
@@ -52,7 +52,7 @@
                 <h3>Бургер с беконом</h3>
                 <p>Идеально приготовленный бекон, плавленый сыр и свежие овощи.</p>
                 <p><strong>Цена: 17 azn.</strong></p>
-                <button class="order-btn" onclick="openOrderModal('Бургер с беконом', '17 azn')">Заказать</button>
+                <button  class="order-btn" onclick="openOrderModal('Бургер с беконом', '17 azn')">Заказать</button>
             </div>
             <div class="item animated fadeIn">
                 <img src="./img/o.jpg" alt="Вегетарианский бургер">
@@ -60,6 +60,13 @@
                 <p>Нежный растительный котлет и свежие овощи.</p>
                 <p><strong>Цена: 8 azn.</strong></p>
                 <button class="order-btn" onclick="openOrderModal('Вегетарианский бургер', '8 azn')">Заказать</button>
+            </div>
+            <div class="item animated fadeIn">
+                <img src="./img/i (2).webp" alt="">
+                <h3>Куринный бургер</h3>
+                <p>Сочное куриное мясо , приготовленное на гриле.</p>
+                <p><strong>Цена: 11 azn.</strong></p>
+                <button class="order-btn" onclick="openOrderModal('Куринный бургер', '11 azn')">Заказать</button>
             </div>
         </div>
     </section>
@@ -86,7 +93,7 @@
                 <label for="expiry">Срок действия карты:</label>
                 <input type="text" id="expiry" placeholder="MM/YY" name="expiry" maxlength="5" required>
                 
-                <label for="cvv">CVV:</label>
+                <label for="cvc">CVC:</label>
                 <input type="password" id="cvv" placeholder="Три цифры сзади карты" name="cvv" maxlength="3" required>
                 
                 <button type="submit" class="submit-button">Подтвердить заказ</button>
@@ -105,7 +112,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2 class="animated fadeIn">Контакты</h2>
-        <p class="animated fadeIn">Адрес: ул.Шарифзаде, д.1, офис 1</p>
+        <p class="animated fadeIn">Адрес: ул.Шарифзаде 169, д.1, офис 1</p>
         <p class="animated fadeIn">Телефон: +994 051-543-23-06</p>
         <p class="animated fadeIn">Электронная почта: info@JamBurger.com</p>
     </section>

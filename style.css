@@ -127,15 +127,16 @@ button a:hover {
 .menu .menu-items {
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px;
 }
 
 .menu .item {
     background-color: #fff;
-    padding: 20px;
+    
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 80%;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     animation: fadeIn 1s ease-in-out;
@@ -410,7 +411,7 @@ header .logo {
 header .logo img {
     width: 40px;
     margin-right: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 header .logo:hover img {
@@ -421,7 +422,9 @@ header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 10px;
+    text-shadow: 0px 0px 5px grey;
+
 }
 
 header nav ul li {
@@ -438,7 +441,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff5722; /* яркий акцентный цвет */
+    color: #ff5722;
+    text-shadow: 0px 0px 10px; /* яркий акцентный цвет */
 }
 
 /* Плавное изменение фона при прокрутке */
@@ -458,10 +462,10 @@ header.scrolled {
 
 /* Дополнительные стили для анимации логотипа */
 header .logo img {
-    animation: logoScale 0.5s ease-in-out;
+    animation: logoScale 2s ease-in-out;
 }
 
-/* Responsive - Mobile */
+
 
 .order-now {
     display: inline-block;
@@ -1760,6 +1764,12 @@ footer {
     box-sizing: border-box;
     text-align: center;
 }
+.order-btn{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+}
 
 /* Эффект при наведении на кнопку */
 .submit-button:hover {
@@ -2231,7 +2241,19 @@ header nav ul li a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
+header h1{
+    text-shadow: 0px 0px 20px;
+}
+.menu{
+    flex-wrap: wrap;
+}
+.home span{
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg,green,orange);
+    -webkit-background-clip: transparent;
+    text-shadow: 0px 0px 10px;
+}
 
 
 
@@ -2290,7 +2312,7 @@ header nav ul li a {
   }
   .menu-items{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     
   }
@@ -2308,7 +2330,7 @@ header nav ul li a {
   .modal-content .close{
 
     position: absolute;
-    top: 100px;
+    top: 50px;
         
   }
   .submit-button{
