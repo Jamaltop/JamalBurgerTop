@@ -2322,10 +2322,10 @@ header h1{
     padding: 10px;
   }
   .glav{
-    transform: translateX(-20px);
+    transform: translateX(-40px);
   }
   .zakaz{
-    transform: translateX(30px);
+    transform: translateX(80px);
   }
   .modal-content .close{
 
@@ -2336,6 +2336,12 @@ header h1{
   .submit-button{
     position: relative;
     bottom: 30px;
+  }
+  .cont{
+    transform: translateX(30px);
+  }
+  .ab{
+    transform: translateX(15px);
   }
 }
 
