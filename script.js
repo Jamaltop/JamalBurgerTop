@@ -112,9 +112,8 @@ menu.classList.toggle('show');
 document.querySelectorAll('a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        
+        
     });
 });
 // Функция открытия модального окна
@@ -138,3 +137,4 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 };
+AOS.init()
